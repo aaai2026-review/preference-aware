@@ -47,13 +47,14 @@ session_wise_processed_stories
          
 ```
 
-### Experiments and Results
+### Experiments
 
-To validate M2RL, we evaluated state-of-the-art imitation learning algorithms, namely Behavior Cloning (BC) and Diffusion Policy (DP), on two benchmarks:
+We conducted a human-robot study to evaluate whether our preference-aware decision-making framework leads to better task performance and story quality than a myopic baseline that ignores human preferences. 
 
-**1. Multimodal Interface Benchmark:** We compared the algorithms' performance when trained on demos from a single interface (gamepad) vs all three interfaces. Results showed that both BC and DP (especially DP) achieved lower prediction errors when trained on multimodal interface data. This underscores the importance of collecting demos from diverse interfaces to improve policy robustness.
+**1. The preference-aware framework:** infers user preferences via an LLM, solves an MDP to optimize long-term team rewards, and selects narrative words accordingly.
 
-**2. Multimodal Data Benchmark:** We compared the algorithms' performance when trained on a single RGB+D stream (wrist camera) vs all three streams. DP's performance improved with more camera streams for most tasks, while BC's errors increased. This suggests multimodal data can improve task performance if algorithms can effectively extract relevant cross-modal representations (e.g. using an attention or denoising mechanism like in DP).
+**2. Myopic baseline:** selects words based solely on immediate reward, using word weight, theme relevance, and story coherence without modeling preferences. 
 
-M2RL dataset takes a step towards aligning robot imitation learning setups with how humans learn - leveraging multimodal cues and diverse experiences. Our experiments demonstrate the benefits of learning from diverse interfaces and multimodal data to improve manipulation task performance. We hope M2RL enables further research into effective robot learning from human demonstrations.
+Both approaches use the same LLM for generation to ensure fair comparison.
+
 
