@@ -11,20 +11,21 @@
 
 
 <figure>
-  <img src="./images/storytelling_testbed.png" width="50%" style="display: block; margin: auto;">
-  <figcaption style="text-align: center; font-size: 12px;">Collaborative Storytelling Testbed</figcaption>
+  <img src="./images/storytelling_testbed.png" width="50%" style="display: block; margin: auto;" align="center">
+  <figcaption style="text-align: center; font-size: 12px;">Collaborative Storytelling Testbed.</figcaption>
 </figure>
+
 
 Humans excel at rapidly modeling team members' latent factors, such as preferences, even with limited interaction data. However, replicating this capability in human-agent teams is challenging because existing approaches often require either complex computational models of human behavior or large amounts of interaction data, which are often infeasible for real-time deployments. To overcome these limitations, we propose a novel preference-aware decision-making framework that bridges the gap between model-driven and data-driven methods to enable real-time human-agent interaction. In particular, our approach formulates the agent’s decision-making process as a Markov Decision Process (MDP), where the framework estimates human preference distribution by leveraging a Large Language Model (LLM) and incorporates that to solve the MDP, enabling the agent to make adaptive decisions that optimize long-term collaborative outcomes. We evaluate the framework in a large-scale human-agent interaction study (n = 40) using a collaborative storytelling task to assess its impact on task performance and participants' perceptions of collaboration. Our findings indicate that the proposed framework significantly improved task performance, story quality, and robot contribution while enhancing perceived collaboration fluency, agent competency, and interactivity compared to a myopic baseline. Moreover, external evaluators also found the preference-aware strategy to yield more fluent collaboration and higher-quality stories than the baseline. These findings will enable the development of more collaborative and effective agents to improve task performance and user experience across various environments.
 
-### Collaborative storytelling testbed 
+### Preference-aware Decision-Making Framework Overview
 
 Collaborative storytelling testbed where two humans and a robot (Sam) take turns building a story. Sam uses an MDP with LLM-based preference estimation to select reward-maximizing actions. The interface displays available words, turn order, and points to support and evaluate adaptive collaboration.
 
 <figure>
 <img src="./images/illustrative_example.png" width="100%" height="100%" align="center">
 
-<figcaption style="display: block; margin: auto; text-align: center; font-size:12;"> Collaborative Storytelling Testbed</figcaption>
+<figcaption style="display: block; margin: auto; text-align: center; font-size:12;"> Preference-aware Decision-Making Framework Overview.</figcaption>
 </figure>
 
 
