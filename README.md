@@ -16,8 +16,6 @@ Humans excel at rapidly modeling team members' latent factors, such as preferenc
 
 ### Preference-aware Decision-Making Framework Overview
 
-Collaborative storytelling testbed where two humans and a robot (Sam) take turns building a story. Sam uses an MDP with LLM-based preference estimation to select reward-maximizing actions. The interface displays available words, turn order, and points to support and evaluate adaptive collaboration.
-
 <figure>
 <img src="./images/illustrative_example.png" width="100%" height="100%" align="center">
 </figure>
